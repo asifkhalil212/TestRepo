@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<EntityAPMApplication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Kronos Timekeeping</Name>
+  <Description>Cloud-based (SaaS) Timecard/tracking system hosted by vendor</Description>
+  <ApplicationID>68</ApplicationID>
+  <ApplicationType>
+    <Name>Web</Name>
+    <Description>Web</Description>
+    <ApplicationTypeID>1106</ApplicationTypeID>
+    <IconPath>web.png</IconPath>
+  </ApplicationType>
+  <ActionPolicyDefinitionID xsi:nil="true" />
+  <Version>1.0</Version>
+  <RequiredAPMVersion>3.0</RequiredAPMVersion>
+  <UserDefined>true</UserDefined>
+  <IsRemoved>false</IsRemoved>
+  <UpgradeGUID>aa54bf52-bb68-4de6-a6d0-758b4075420e</UpgradeGUID>
+  <StoredProfileID xsi:nil="true" />
+  <Components>
+    <EntityAPMComponent>
+      <Name>HTTP Content Check</Name>
+      <Description />
+      <ComponentID>1517</ComponentID>
+      <ApplicationID>68</ApplicationID>
+      <ComponentType>
+        <Name>File Content</Name>
+        <Description>File Content</Description>
+        <ApplicationTypeID>17</ApplicationTypeID>
+        <IconPath>filecontent.svg</IconPath>
+      </ComponentType>
+      <IsRemoved>false</IsRemoved>
+      <Critical>false</Critical>
+      <PollFrequencyMin>5</PollFrequencyMin>
+      <Category>HttpContent</Category>
+      <GUID>7536f6bc-a6c1-4c67-af3e-4d10599e3d4d</GUID>
+      <RequiredCredentialType xsi:nil="true" />
+      <Discoverable>false</Discoverable>
+      <UpgradeGUID>56248100-1183-4dd6-8002-00e514724ad2</UpgradeGUID>
+      <ConfigurationData>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:AuthMechanism</Name>
+          <Value>None</Value>
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:Content</Name>
+          <Value>/wfc/logonWithUID</Value>
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:CustomHeader</Name>
+          <Value />
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:CustomHeader2</Name>
+          <Value />
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:CustomHeader3</Name>
+          <Value />
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:IgnoreCertErrors</Name>
+          <Value>False</Value>
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:Method</Name>
+          <Value>GET</Value>
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:MonitorStateIfContentNotFound</Name>
+          <Value>Up</Value>
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:Password</Name>
+          <Value />
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:ProxyPort</Name>
+          <Value />
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:ProxyServer</Name>
+          <Value />
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:TimeoutMs</Name>
+          <Value>5000</Value>
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:URL</Name>
+          <Value>https://johnmuirhealth.kronos.net</Value>
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:UserAgent</Name>
+          <Value>Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36</Value>
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:UseRegularExpression</Name>
+          <Value>False</Value>
+        </EntityNameValuePairs>
+        <EntityNameValuePairs>
+          <Name>MonHTTP:Username</Name>
+          <Value />
+        </EntityNameValuePairs>
+      </ConfigurationData>
+    </EntityAPMComponent>
+  </Components>
+  <Groups />
+  <Attributes>
+    <EntityAPMApplicationAttribute>
+      <AttributeID>3</AttributeID>
+      <Name>Notes</Name>
+      <ApplicationID>68</ApplicationID>
+      <Value>app-kronons-tst-1</Value>
+    </EntityAPMApplicationAttribute>
+  </Attributes>
+</EntityAPMApplication>
